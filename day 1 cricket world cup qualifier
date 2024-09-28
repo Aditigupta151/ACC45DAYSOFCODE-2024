@@ -1,0 +1,6 @@
+score = int(input("enter the score of team played in group stage matches:"))
+
+if(score>=12):
+    print("yes")
+else:
+    print("no")
