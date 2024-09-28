@@ -1,0 +1,24 @@
+#taking string input
+str =input("enter your string:")
+#assigning count equal to 0
+count =0
+#checking constant
+for x in str:
+        if (x=='a'):
+            count+1
+        elif(x=='i'):
+            count+1
+        elif(x=='e'):
+            count+1
+        elif(x=='o'):
+            count+1
+        elif(x=='u'):
+            count+1
+        
+        else:
+            count+0
+
+if(count <=4):
+    print("yes")
+else:
+    print("no")
