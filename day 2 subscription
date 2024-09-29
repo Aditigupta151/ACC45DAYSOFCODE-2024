@@ -1,0 +1,64 @@
+group =int( input("enter number of members in your group:"))
+cost =int( input("enter cost of one subscription:"))
+
+if(group<= 6):
+    print("1 subscription and cost will be:", cost)
+
+elif(group>6 and group<=12):
+    print("2 subscription and cost will be:", cost*2)
+
+elif(group>12 and group<=18):
+    print("3 subscription and cost will be:", cost*3)
+
+elif(group>18 and group<=24):
+    print("4 subscription and cost will be:", cost*4)
+
+
+elif(group>24 and group<=30):
+    print("5 subscription and cost will be:", cost*5)
+
+elif(group>30 and group<=36):
+    print("6 subscription and cost will be:", cost*6)
+
+elif(group>36 and group<=42):
+    print("7 subscription and cost will be:", cost*7)
+
+elif(group>42 and group<=48):
+    print("8 subscription and cost will be:", cost*8)
+
+elif(group>54 and group<=60):
+    print("9 subscription and cost will be:", cost*9)
+
+elif(group>60 and group<=66):
+    print("10 subscription and cost will be:", cost*10)
+
+elif(group>66 and group<=72):
+    print("11 subscription and cost will be:", cost*11)
+
+elif(group>72 and group<=78):
+    print("12 subscription and cost will be:", cost*12)
+
+elif(group>78 and group<=84):
+    print("13 subscription and cost will be:", cost*13)
+
+elif(group>84 and group<=90):
+    print("13 subscription and cost will be:", cost*14)
+
+elif(group>96 and group<=100):
+    print("13 subscription and cost will be:", cost*15)
+
+else:
+    print("not more than 100 allowed")
+
+
+
+
+
+
+
+
+
+
+
+
+
