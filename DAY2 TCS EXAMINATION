@@ -1,0 +1,44 @@
+#taking input of marks for sloth
+dsa1 = int(input("enter marks of dsa for sloth:"))
+TOC1 = int(input("enter marks of toc for sloth:"))
+DM1 = int(input("enter marks of dm for for sloth:"))
+ #taking input of marks for dragon       
+dsa2 = int(input("enter marks of dsa for dragon:"))
+TOC2 = int(input("enter marks of toc for dragon :"))
+DM2 = int(input("enter marks of dm for dragon:"))
+
+#adding marks of sloth
+sum_of_sloth = int(dsa1 + TOC1 +DM1)
+#adding marks of dragon
+sum_of_dragon = int(dsa2 + TOC2 + DM2)
+
+#checking rank
+if(sum_of_sloth == sum_of_dragon):
+    if(dsa1 == dsa2):
+        if(TOC1 == TOC2):
+            if(DM1 == DM2):
+                print("TIED")
+
+            elif(DM1>DM2):
+                print("SLOTH")
+
+            else:
+                print("DRAGON")
+
+        elif(TOC1>TOC2):
+            print("SLOTH")
+
+        else:
+            print("DRAGON")
+
+    elif(dsa1>dsa2):
+        print("SLOTH")
+
+    else:
+        print("DRAGON")
+
+elif(sum_of_sloth > sum_of_dragon):
+    print("SLOTH")
+
+else:
+    print("DRAGON")        
