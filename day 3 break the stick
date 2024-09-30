@@ -1,0 +1,89 @@
+ 
+def sticks_break(stick_length, n, desired_length): 
+	
+	# if stick cant be break any more
+	if n < 1: 
+		
+		return 0 
+	# smaller than the desired length 
+	if stick_length < desired_length: 
+		
+		return 0
+		
+	# check if stick length is even number 
+	if stick_length % 2 == 0: 
+		
+		# check if half of stick 
+		# length is equal to desired length 
+		if stick_length / 2 == desired_length: 
+			
+			return 2
+			
+		# check if half of stick length 
+		# is greater than the desired length 
+		elif stick_length / 2 > desired_length: 
+			
+			return sticks_break(stick_length / 2, n-1, desired_length) 
+			
+	# check if stick length is odd number 
+	if stick_length % 2 != 0: 
+		
+		# for odd number two halves will be generated 
+		# checking if first half is equal to desired length 
+		if stick_length // 2 == desired_length: 
+			
+			return 1
+		
+		# checking if second half 
+		# is equal to desired length 
+		if stick_length // 2 + 1 == desired_length: 
+			
+			return 1
+		
+		# check if half of stick length 
+		# is greater than the desired length 
+		if stick_length//2 > desired_length: 
+			
+			return max (sticks_break(stick_length//2, n-1, desired_length), sticks_break(stick_length//2 + 1, n-1, desired_length)) 
+		
+	
+	return 0
+# method to find number of sticks 
+def numberOfSticks(list_length, n, desired_length): 
+	
+	count = 0
+	
+	for stick_length in list_length: 
+			# check if desired length is found 
+		if desired_length == stick_length: 
+			
+			# incrementing the count 
+			count = count + 1
+		
+		# check if stick length is 
+		# greater than desired length 
+		elif stick_length > desired_length: 
+			
+			# incrementing count 
+			# after break the sticks 
+			count = count + sticks_break(stick_length, n, desired_length) 
+	
+	# return count	 
+	return count 
+
+# driver code 
+if __name__ == "__main__": 
+	
+	# list of integers 
+	list_length =[1, 2, 3, 21] 
+	
+	# number of ways stick can be break 
+	n = 3
+	
+	# desired length 
+	desired_length = 3
+
+	count = numberOfSticks(list_length, n, desired_length) 
+	
+	# print result 
+	print(str(count)) 
