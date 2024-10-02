@@ -1,0 +1,16 @@
+#chef has prepared topic out of 10
+a = int(input("enter number of topic chef prepared 1st out of 10 :"))
+b = int(input("enter number of topic chef prepared 2nd out of 10 :"))
+
+c = int(input("enter number of topic chef prepared 3rd out of 10 :"))
+
+topic = int(input("enter topic which is given to chef to speak about:"))
+
+if(a == topic):
+    print("yes")
+elif(b == topic):
+    print("yes")
+elif(c == topic):
+    print("yes")
+else:
+    print("no")
