@@ -1,0 +1,17 @@
+#there are 101 citizen in chefland . its election time
+A = int(input("enter votes of party A in chefland:"))
+
+B = int(input("enter votes of party B in chefland :"))
+
+C = int(input("enter votes of party C in chefland :"))
+
+if(A+B+C >= 101 ):
+    print("NOT VALID ONLY 101 SEATS ARE THERE")
+elif(A>=51):
+    print("A is winner")
+elif(B>= 51):
+    print("B is winner")
+elif(C>= 51):
+    print("C is winner")
+else:
+    print("NOTA")
