@@ -1,0 +1,26 @@
+x = int(input("enter time limit  to solve question A when solve A TO B:"))
+y = int(input("enter time limit to solve question B when solve A TO B:"))
+
+X =int(input("enter time limit  to solve question A when solve B TO A:"))
+Y=int(input("enter time limit  to solve question A when solve B TO A:"))
+
+#we get 500 points for A and 1000 points for B
+# 2 reduce in A and 4 reduce in B when it takes a minute to solve question
+
+sum1 = 500- 2*x
+sum2 = 1000-4*y
+sum3 = 500-2*X
+sum4 = 1000-4*Y
+
+TOTAL1 = sum1 +sum2
+total2 = sum3+sum4
+
+print("if chef attempt A TO B, then sum of points will be: ", TOTAL1)
+print("if chef attempt question from B TO A ,the sum of points will be:", total2)
+
+if(total2>TOTAL1):
+    print("chef should solve from B TO A and get points:", total2 ,"points")
+elif(total2<TOTAL1):
+    print("chef should solve from A TO B and get points:", TOTAL1 ,"points")
+else:
+    print("both points are equal can be solve in any ways and get points:", total2)
