@@ -1,0 +1,16 @@
+money = int(input("enter units of money present in bank:"))
+print(money , "units are presnt in bank")
+
+people = input("enter number of people want to withdraw from bank")
+
+for i in people:
+    num = input("enter required unit from bank:")
+    if(num<= money):
+       newnum =  money - num
+       money = newnum
+          if(money<0):
+            print("error")
+         else:
+        print("debited")
+     else:
+        print("error")
