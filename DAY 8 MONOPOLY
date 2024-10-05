@@ -1,0 +1,17 @@
+# there are 4 companies in chefland A ,B,C,D
+
+a = int(input("enter profit of company a in lakhs:"))
+b = int(input("enter profit of company b in lakhs:"))
+c = int(input("enter profit of company c in lakhs:"))
+d = int(input("enter profit of company d in lakhs:"))
+
+if(a>(b+c+d)):
+    print("yes")
+elif(b>(a+d+c)):
+    print("yes")
+elif(c>(a+d+b)):
+    print("yes")
+elif(d>(a+b+c)):
+    print("yes")
+else:
+    print("no")
