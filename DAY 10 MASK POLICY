@@ -1,0 +1,11 @@
+infected = int(input("enter number of infected people in city:"))
+uninfected = int(input("enter number of uninfected person in city:"))
+
+if(infected > uninfected):
+    print( uninfected,"uninfected can wear mask")
+
+elif(uninfected>infected):
+    print(infected, "infected can wear mask")
+
+else:
+    print( infected,"people as both infected and uninfected are same ")
