@@ -1,0 +1,11 @@
+x = int(input("enter intial position of police:")
+y = int(input("enter intial position of theif:")
+
+#speed of police is 2 units per second and theif is 1 unit per second 
+time1 = x/2
+time2 = y/1
+if(time1 == time 2):
+   print("min time to catch thief is :" , time1)
+
+else:
+   print("none")
