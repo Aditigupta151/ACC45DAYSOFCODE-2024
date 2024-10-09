@@ -1,0 +1,16 @@
+N= int(input("enter number of people tanu observed:"))
+list = []
+for i in range(N):
+    n = input("enter recorded gestures in N , Y OR I:")
+    list.append(n)
+
+print(list)
+
+if (list.count("I") >= list.count("Y")):
+    print("INDIAN")
+
+elif(list.count("I")<= list.count("Y")):
+    print("NOT INDIAN")
+
+else:
+    print("NOT SURE")
