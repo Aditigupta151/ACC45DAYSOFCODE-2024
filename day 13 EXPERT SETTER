@@ -1,0 +1,9 @@
+x = int(input("enter number of problem submitted:"))
+y =int(input("enter number of problem approved by chef:"))
+percentage = (y/x)*100
+
+if( percentage >= 50):
+    print("yes ")
+
+else:
+    print("no")
