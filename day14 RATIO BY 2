@@ -1,0 +1,29 @@
+#for two positive integer x and y
+
+x = int(input("enter 1st positive integer:"))
+y = int(input("enter 2nd positive integer: "))
+
+
+op1 = int(x>=(2*y))
+op2 = int(y>=(2*x))
+
+if(op1  ):
+    print("0")
+
+elif(op2):
+    print("0")
+
+else:
+  
+   if(x-(2*y)< y-(2*x)):
+      
+     n = x-(2*y)
+     print(n , "operations")
+
+   elif(x-(2*y))>(y-(2*x)):
+      m = y - (2*x)
+      print(m , "operations") 
+
+    else:
+      s = y - (2*x)
+      print(s, "operations")
