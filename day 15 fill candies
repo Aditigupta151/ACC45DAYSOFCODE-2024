@@ -1,0 +1,12 @@
+
+n = int(input("enter total number of candies chef recieved:"))
+
+k = int(input("enter total number of pockets a bag have:"))
+
+
+m = int(input("enter total number of candies each pocket can hold:"))
+
+
+op = k*m/n
+print("number of bag needed will be:", 1 -(op*10))
+print(op)
