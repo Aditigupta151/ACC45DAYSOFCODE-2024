@@ -1,0 +1,9 @@
+n = int(input("enter weight of pulp factory recieved in kgs:"))
+
+#1kg pulp can make 1000 pages 
+
+pages = n*1000
+#1 notebook consist of 100 pages
+notebook = int(pages/100)
+
+print("the notebook can be made from",n,"kgs pulp are:", notebook)
