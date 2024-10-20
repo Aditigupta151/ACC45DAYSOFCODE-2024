@@ -1,0 +1,13 @@
+#time taken for travelling
+
+bike = int(input("enter time taken by bike to travel in minutes:"))
+car = int(input("enter time taken by car to travel in minutes:"))
+
+if(car>bike):
+    print("bike")
+
+elif(bike>car):
+    print("car")
+
+else:
+    print("same")
