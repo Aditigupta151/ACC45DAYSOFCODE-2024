@@ -1,0 +1,14 @@
+n =input("enter number of teams:")
+
+matches = int(n/2)
+
+a =input("enter duration of each round:")
+
+
+b =input("enter length of breaks between them:")
+total_gap = int(b*matches)
+
+sum = int(a+b+total_gap)
+
+print("total time uses in matches:", sum)
+
