@@ -1,0 +1,21 @@
+#devendra startup
+
+a = int(input("enter amount offered by company for 10% of company :"))
+
+b= int(input("enter amount offered by company for 20% of company:"))
+
+#valuation for company
+
+val_a = int((a*100)/10)
+
+val_b = int((b*100)/20)
+
+if(val_a>val_b):
+    print("FIRST")
+
+elif(val_b>val_a):
+    print("SECOND")
+
+else:
+    print("ANY")
+
