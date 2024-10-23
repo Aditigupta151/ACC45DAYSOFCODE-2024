@@ -1,0 +1,21 @@
+#ipl and RCB
+
+x = int(input("enter points needed by RCB for qualifying for playoffs:"))
+y =int(input("enter matches left:"))
+
+#2 points for win, 1 point for tie and 0 point for loss
+
+if(x==0):
+    print("no need for extra point")
+elif(x==1):
+    print("1 match to tie")
+elif(x==2):
+    print("one match to win")
+elif(x==2 and y>=2):
+    print("one match to win or 2 matches to tie")
+elif(x==y):
+    print("all matches to tie or half matches to win")
+elif(x-y>=0):
+    print("matches for tie", x-y,"or to win", x-y/2)
+else:
+    print("error")
