@@ -1,0 +1,15 @@
+#buy 1 get 1 free
+#in byteland
+jewel = int(input("enter number of jewel alice want to buy:"))
+list1=[]
+for i in range(0,jewel):
+      j =input("enter jewel colour:")
+      list1.append(j)
+print(list1)
+for j in range(0,jewel):
+      if(list1.index(j)==list1.index(j+1)):
+            n =1
+      
+      else:
+            n = 0
+            
