@@ -1,0 +1,7 @@
+chef = int(input("enter coordinate of chef:"))
+chefina = int(input("enter coordinate of chefina:"))
+if(chef == chefina):
+  print("0")
+else:
+   step = chef-chefina
+  print(step/10)
