@@ -1,0 +1,11 @@
+alice = int(input("enter score of alice:"))
+Bob = int(input("enter score of Bob:"))
+
+score = alice + Bob
+if(score ==0):
+  print("alice")
+elif(score%2-1==0):
+  print("alice")
+else:
+  print("Bob")
+
