@@ -1,0 +1,18 @@
+teama = int(input("score of 1st team:"))
+teamb = int(input("score of 2nd team:"))
+print("score is:",teama , ":" , teamb)
+print("enter desire score:")
+team1 = int(input("score desire 1st team":))
+team2 = int(input("score desire 2nd team:"))
+print("score desire is :", team1,":", team2)
+
+if(teama ==  team1):
+  if(teamb == team2):
+     print("no need")
+elif(teama<team1):
+   if(teamb < team2):
+      print("possible")
+   else:
+      print(" not possible")
+else:
+    print(" not possible")
