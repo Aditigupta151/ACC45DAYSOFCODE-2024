@@ -1,0 +1,11 @@
+#11 players are there in cricket team and 1 will be captain and one will be vice captain
+N= int(input(" enter number of player chef is considering:"))
+
+if(N==0):
+  print("no one")
+elif(N==1):
+  print(" one captain and none vice captain")
+elif(N==2):
+  print("one captain and ne vice captain")
+else:
+  print("multiple choices:",N)
