@@ -1,0 +1,18 @@
+N = int(input("enter number of rounds for game:"))
+play1 = []
+play2 = []
+for i in range(1,N):
+  play1s = int(input("score of player 1:"))
+  play1.append(play1s)
+  play2s = int(input("score of player 2:"))
+  play2.append(play2s)
+
+print(play1," score of player 1")
+print(play2, "scores of player2")
+diff = []
+for i in play1:
+  for I in play2:
+      diff.append(play1[i]-play2[I])
+print(diff)
+
+  
