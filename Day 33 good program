@@ -1,0 +1,7 @@
+#4 bits is equal to 1 nibble
+n = int(input("enter number of bits:"))
+div = n/4
+if(int(div) if true):
+  print("GOOD")
+else:
+  print("NOT GOOD")
