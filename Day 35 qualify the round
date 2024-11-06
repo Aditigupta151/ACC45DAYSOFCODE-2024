@@ -1,0 +1,12 @@
+#in coding contest
+X = int(input("enter minimum points to qualify round"))
+#for easy chef gets 1 point and for hard chef gets 2 points
+A = int(input(" enter easy questions he attempt:"))
+B = int(input(" enter hard question he attempts:"))
+# sum of all points
+sum =( A*1 + B*2)
+
+if (X< sum):
+ print(" qualify")
+else:
+ print(" not qualify")
