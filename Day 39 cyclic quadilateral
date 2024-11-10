@@ -1,0 +1,23 @@
+# for cyclic quad
+print("angle must be between 0 to 180")
+a = int(input("enter size of angle:"))
+
+b= int(input("enter size of angle"))
+
+c= int(input("enter size of angle"))
+
+d= int(input("enter size of angle"))
+
+if(a+c == 180):
+  if(b+d == 180):
+     print("yes")
+  else:
+     print("no")
+elif(a+c<180):
+   if(b+d == 180):
+     print("yes")
+  else:
+     print("no")
+else:
+   print("no")
+    
