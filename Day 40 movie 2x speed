@@ -1,0 +1,10 @@
+x = int(input("enter total minutes of movie:"))
+#in y minutes he watches it on 2x speed
+y = int(input("enter total minutes chef watch movie in 2x speed:"))
+
+speedtime = y/2
+rest = x-y
+
+totaltime = rest + speedtime
+
+print("total time chef actually watch movie is:" , totaltime))
