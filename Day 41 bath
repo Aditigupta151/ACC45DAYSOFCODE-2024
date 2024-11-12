@@ -1,0 +1,11 @@
+x = int(input(" enter litters of water in geyser:"))
+y = int(input(" enter litters of water one bucket can fill:"))
+
+# 2 bucket is sufficient for per person
+if(x>=y):
+  total = x/y
+else :
+   print("invalid")
+
+people = total/2
+print(people)
