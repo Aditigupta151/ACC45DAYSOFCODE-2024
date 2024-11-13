@@ -1,0 +1,21 @@
+a = int(input(" enter price of 1st item:"))
+b = int(input(" enter price of 2nd item:"))
+c = int(input(" enter price of 3rd item:"))
+
+if(a==b):
+ if(a>c):
+   print(a+b)
+ else:
+   print(c+a)
+elif(a>b):
+ if(b>c): 
+   print(a+b)
+ else:
+   print(c+a)
+elif(a<b):
+  if(a<c):
+    print(b+c)
+  else:
+    print(a+b)
+else:
+   print(" invalid ")
