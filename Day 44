@@ -1,0 +1,13 @@
+n = int(input(" enter number of episodes:"))
+a = int(input(" enter number of odd episodes in minute"))
+b = int(input(" enter number of even episodes in minute"))
+list =[]
+
+if(n==1):
+   list.append(int(input())
+  print(a*list[1])
+else:
+   for I in range(2,n):
+     list.append(int(input())
+      print(a*list[1] + b*list[2]
+
