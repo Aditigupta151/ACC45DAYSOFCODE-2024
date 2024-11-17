@@ -1,0 +1,12 @@
+x = int(input(" enter number of max stick chef can have:"))
+y = int(input(" enter number of sticks one plate contain:"))
+
+r = int(input(" enter money chef received:"))
+if(r%30 == 0):
+  return true
+else:
+  print(" invalid")
+totalstick = x + (r/30)
+print(totalstick , " are number of total stick chef had")
+plate = totalstick//y
+print(plate, " number of plate chef had")
