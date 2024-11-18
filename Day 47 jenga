@@ -1,0 +1,8 @@
+n = int(input(" number of people in party:"))
+x = int(input(" number of jenga parts :"))
+
+if(n>x):
+  print("no")
+else:
+  round = n//x
+  print(round, " can jenga be played")
